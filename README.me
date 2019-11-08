@@ -1,0 +1,9 @@
+Average Word Length
+searches through a text file and finds how many times each letter/number appears - it is case sensitive 
+How to run:
+Open these files in an IDE that supports java or use javac in cmd
+In the IDE add these files to a src package and then export as a jar file
+after exporting to a jar run these commands in a VM or system that has hadoop
+hadoop jar avgwordlength.jar stubs.AvgWordLength shakespeare wordlengths
+hadoop fs -ls wordlengths
+hadoop fs -cat wordlengths/*
